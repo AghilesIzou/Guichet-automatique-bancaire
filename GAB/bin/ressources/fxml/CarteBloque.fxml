@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="carteBloque" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="2000.0" stylesheets="@../css/Gab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guichetAutomatiqueBancaire.CarteBloqueController">
+   <children>
+      <Label id="label3" layoutX="395.0" layoutY="190.0" text="Votre  carte  est désormais " />
+      <Label id="label3" layoutX="560.0" layoutY="309.0" text=" bloquée  !" />
+      <Button id="buttonRetour" layoutX="524.0" layoutY="591.0" mnemonicParsing="false" onAction="#exit" prefHeight="72.0" prefWidth="257.0" text="Retirez votre carte" />
+      <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="559.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoGAB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

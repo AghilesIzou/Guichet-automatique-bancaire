@@ -1,0 +1,1063 @@
+!SESSION 2020-04-14 18:34:32.664 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data /home/rilles/2019-l2d1/2019-l2d1/trunk/Guichet Automatique Bancaire -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-04-14 18:34:34.216
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [264]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [281]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [54]
+                Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-04-14 18:34:34.220
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [266]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [264]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [281]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+                     org.apache.xmlrpc [54]
+                       Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-04-14 18:34:34.221
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [281]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [54]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-04-14 18:34:40.008
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-04-14 18:34:40.008
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+!SESSION 2020-04-22 21:00:59.531 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=11.0.6
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-04-22 21:01:05.898
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [264]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [54]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [281]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-04-22 21:01:06.026
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [266]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [264]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [54]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [281]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-04-22 21:01:06.030
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [281]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [54]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-04-22 21:01:59.336
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-04-22 21:01:59.336
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+!SESSION 2020-05-07 16:22:47.926 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=fr_FR
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:54.921
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/212/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.286
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/237/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.569
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/259/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.571
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/259/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.578
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/259/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.623
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/262/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.624
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/262/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:55.638
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/262/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.063
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/299/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.193
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/299/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.195
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/299/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.526
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/341/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.793
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/341/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.795
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/341/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:56.941
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/372/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:57.278
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/394/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:57.595
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/432/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:342)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.130
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/432/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.131
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/432/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.888
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/212/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.889
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/212/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.905
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/237/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.906
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/237/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.907
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/372/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.908
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/372/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.909
+!MESSAGE Error deleting generation.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/394/0/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:512)
+	at org.eclipse.osgi.storage.BundleInfo$Generation.delete(BundleInfo.java:393)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:385)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.osgi 2 0 2020-05-07 16:22:58.910
+!MESSAGE Error deleting bunlde info.
+!STACK 0
+java.io.FileNotFoundException: /home/rilles/Bureau/dossiers_bureau/eclipse/configuration/org.eclipse.osgi/394/.delete (Permission non accordée)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.osgi.storage.Storage.delete0(Storage.java:1238)
+	at org.eclipse.osgi.storage.Storage.delete(Storage.java:1217)
+	at org.eclipse.osgi.storage.BundleInfo.delete(BundleInfo.java:504)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.cleanup(EquinoxBundle.java:388)
+	at org.eclipse.osgi.container.ModuleRevisions.removeRevision(ModuleRevisions.java:109)
+	at org.eclipse.osgi.container.ModuleDatabase.cleanupRemovalPending(ModuleDatabase.java:406)
+	at org.eclipse.osgi.container.ModuleDatabase.uninstall(ModuleDatabase.java:322)
+	at org.eclipse.osgi.container.ModuleContainer.uninstall(ModuleContainer.java:452)
+	at org.eclipse.osgi.storage.Storage.refreshStaleBundles(Storage.java:341)
+	at org.eclipse.osgi.storage.Storage.createStorage(Storage.java:181)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:94)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:34)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.startup(EclipseStarter.java:315)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2020-05-07 16:23:13.089
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [921]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [656]
+         Unresolved requirement: Import-Package: javax.xml.bind
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [938]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2020-05-07 16:23:13.102
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [923]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.24.2.v20180905-0003"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [921]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [656]
+                Unresolved requirement: Import-Package: javax.xml.bind
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.24.2.v20180904-2231"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [938]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2020-05-07 16:23:13.133
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [938]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [656]
+         Unresolved requirement: Import-Package: javax.xml.bind
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-05-07 16:29:19.645
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-05-07 16:29:19.645
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'

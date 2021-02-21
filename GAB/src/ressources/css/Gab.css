@@ -1,0 +1,119 @@
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+/* stylisation du root */
+
+.root{
+	
+	-fx-background-image: url("../images/inss.jpg");  /* image en fond */
+	-fx-background-size: 100% 100%;
+	-fx-background-repeat: no-repeat;
+	-fx-alignment: center;
+}
+
+#rootPersonalise{
+	-fx-background-color:  #000000;  
+	
+	-fx-background-size: 100% 100%;
+	-fx-background-repeat: no-repeat;
+	-fx-alignment: center;
+	-fx-padding: 10px;
+}
+/* styliser les boutons */
+
+.button{
+	
+	-fx-font: 16px "Avenir Next" ;
+	-fx-background-color:  green;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff bold;
+	-fx-padding: 4px;
+	
+}
+
+
+#buttonDebut{
+	-fx-font: 16px "Avenir Next" ;
+	-fx-background-color:  green;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #fff;
+	-fx-padding: 4px;
+	-fx-graphic: url("../images/click9.png");
+}
+	
+	
+#buttonRetour{
+	-fx-font: 16px "Avenir Next" ;
+	-fx-background-color:  #000000;
+	-fx-background-radius: 5px;
+	-fx-text-fill: red;
+	-fx-padding: 4px;
+	-fx-graphic: url("../images/click9.png"); 
+	
+}
+
+#buttonRetour2{
+	-fx-font: 16px "Avenir Next" ;
+	-fx-background-color:  #000000;
+	-fx-background-radius: 5px;
+	-fx-text-fill: red bold;
+	-fx-padding: 4px;
+	
+}
+#button1{
+	
+	-fx-font: 16px "Avenir Next" ;
+	-fx-background-color:  green;
+	-fx-background-radius: 5px;
+	-fx-text-fill: white bold;
+	-fx-padding: 4px;
+}
+	
+	
+#label{
+	
+	-fx-font-family: Pacifico;
+	-fx-font-size: 45px;
+	-fx-text-fill: green;   
+}
+
+#label2{
+	
+	-fx-font-family: Pacifico;
+	-fx-font-size: 45px;
+	-fx-text-fill: #000000; 
+
+}
+#label3{
+	
+	-fx-font-family: Pacifico;
+	-fx-font-size: 45px;
+	-fx-text-fill:  red bold; 
+}
+
+/* styliser les titres */
+
+#labelTitre{
+	
+	-fx-font-family: "pacifico" bold;
+	-fx-font-size: 45px;
+	-fx-text-fill: #000000; 
+	-fx-font-weight: bold;
+}
+
+/* une ombre apparait si l'on survole un bouton */
+
+.button:hover {
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8),40,0,0,0);
+	-fx-cursor: hand; 
+}
+
+
+/* styliser le champ de saisi du code */
+#PasswordField{
+	
+	-fx-background-color: #2f4f4f;
+	-fx-text-fill: white;
+}
+
+

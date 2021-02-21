@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="p" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="2000.0" stylesheets="@../css/Gab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guichetAutomatiqueBancaire.ChoixOperationIntController">
+   <children>
+      <Button layoutX="42.0" layoutY="331.0" mnemonicParsing="false" onAction="#boutonDepot" prefHeight="45.0" prefWidth="234.0" text="DÉPÔT" />
+      <Button layoutX="42.0" layoutY="475.0" mnemonicParsing="false" onAction="#boutonRetrait" prefHeight="45.0" prefWidth="234.0" text="RETRAIT" />
+      <Button layoutX="42.0" layoutY="603.0" mnemonicParsing="false" onAction="#boutonExit" prefHeight="45.0" prefWidth="234.0" text="RÉCUPÉREZ VOTRE CARTE" />
+      <Button layoutX="1036.0" layoutY="331.0" mnemonicParsing="false" onAction="#boutonSolde" prefHeight="45.0" prefWidth="234.0" text="SOLDE" />
+      <Label id="label" layoutX="349.0" layoutY="162.0" prefHeight="81.0" prefWidth="623.0" text="Choisissez  le  type  d'opération" />
+      <Button layoutX="1036.0" layoutY="475.0" mnemonicParsing="false" onAction="#boutonRib" prefHeight="45.0" prefWidth="234.0" text="RIB" />
+      <Button layoutX="1036.0" layoutY="603.0" mnemonicParsing="false" onAction="#boutonHistorique" prefHeight="45.0" prefWidth="234.0" text="HISTORIQUE" />
+      <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="555.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoGAB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="2000.0" stylesheets="@../css/Gab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guichetAutomatiqueBancaire.FinController">
+   <children>
+      <Label id="label" layoutX="376.0" layoutY="152.0" text="Merci de votre visite à bientôt" />
+      <ImageView fitHeight="323.0" fitWidth="508.0" layoutX="420.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/byee.jpg" />
+         </image>
+      </ImageView>
+      <Label id="label" layoutX="388.0" layoutY="590.0" text="Thank you for your visit Bye" />
+      <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="572.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoGAB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

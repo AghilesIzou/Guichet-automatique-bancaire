@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ticket" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="2000.0" stylesheets="@../css/Gab.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.guichetAutomatiqueBancaire.TicketController">
+   <children>
+      <Label id="label" layoutX="438.0" layoutY="181.0" text="Souhaitez vous avoir " />
+      <Label id="label" layoutX="532.0" layoutY="276.0" text="un ticket  ?" />
+      <Button layoutX="1029.0" layoutY="597.0" mnemonicParsing="false" onAction="#oui" prefHeight="43.0" prefWidth="120.0" text="Oui" />
+      <Button id="buttonRetour2" layoutX="165.0" layoutY="597.0" mnemonicParsing="false" onAction="#non" prefHeight="43.0" prefWidth="120.0" text="Non" />
+      <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="548.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logoGAB.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
